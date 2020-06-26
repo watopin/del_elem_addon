@@ -1,0 +1,15 @@
+{
+    "manifest_version":2,
+    "name":"del_elem",
+    "version":"1.0",
+    "description":"delete specific element",
+    "icons":{
+        "48": "icons/border-48.png"
+    },
+    "content_scripts":[
+        {
+            "matches": ["*://157.113.189.62/editor.html/content/fm/hoge/*"],
+            "js": ["delete_unnecessary_element.js"]
+        }
+    ]
+}
